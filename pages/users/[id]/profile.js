@@ -19,7 +19,7 @@ export default function UserProfile() {
   const isVerified = true;
 
   return (
-    <div className="max-w-5xl mx-auto mt-4">
+    (<div className="max-w-5xl mx-auto mt-4">
       <NextSeo
         title="ollie"
         description="ollie is one of the millions creating and exploring the endless possibilities of Roblox. Join ollie on Roblox and explore together!"
@@ -60,7 +60,6 @@ export default function UserProfile() {
           </div>
         </div>
       </div>
-
       <div className="section mt-4 grid grid-cols-2 text-center font-medium">
         <div
           className="p-2 about-boxshadow"
@@ -89,16 +88,15 @@ export default function UserProfile() {
             </Tippy>
             Previous usernames
           </span>
-          <Link href={`/report-abuse/?userId=${id}`}>
-            <a
-              className="ml-auto text-red-500 font-medium"
-            >
+          <Link
+            href={`/report-abuse/?userId=${id}`}
+            className="ml-auto text-red-500 font-medium">
+            
               Report Abuse
-            </a>
+            
           </Link>
         </div>
       </div>
-
       <div className="mt-4">
         <span className="text-xl font-bold">Currently Wearing</span>
         <div className="grid grid-cols-2 mt-2">
@@ -131,7 +129,6 @@ export default function UserProfile() {
           </div>
         </div>
       </div>
-
       <div className="mt-4">
         <Container title="Friends (?)" href={`/users/${id}/friends`}>
           <div className="flex shrink-0 overflow-auto">
@@ -148,20 +145,17 @@ export default function UserProfile() {
           </div>
         </Container>
       </div>
-
       <div className="mt-2">
         <Container title="Groups" noSeeAll>
           { /* ^^ code custom right content (to replace see all). refer to roblox to understand */}
           <ProfileGroupCarousel />
         </Container>
       </div>
-
       <div className="mt-3">
         <Container title="Favourites" href="favourites">
           <HomeGameList />
         </Container>
       </div>
-
       <div className="mt-3">
         <Container title="Roblox Badges" noSeeAll>
           <div className="grid grid-cols-6 gap-3 w-full">
@@ -174,7 +168,6 @@ export default function UserProfile() {
           </div>
         </Container>
       </div>
-
       <div className="mt-3">
         <Container title="Badges" noSeeAll>
           <div className="grid grid-cols-6 gap-3 w-full">
@@ -187,7 +180,6 @@ export default function UserProfile() {
           </div>
         </Container>
       </div>
-
       <div className="mt-4">
         <Container
           title="Statistics"
@@ -205,6 +197,6 @@ export default function UserProfile() {
           </div>
         </Container>
       </div>
-    </div>
+    </div>)
   );
 }

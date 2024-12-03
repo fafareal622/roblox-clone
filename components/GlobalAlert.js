@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /**
  * GlobalAlert component
  * @param {string} type - The type of the alert

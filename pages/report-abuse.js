@@ -4,7 +4,7 @@ export default function ReportAbusePage() {
       <h1 className="text-3xl font-bold">Report Abuse</h1>
       <div className="bg-neutral-700 w-full mt-4 p-3">
         <div className="w-full border-b-[1px] border-neutral-300 pb-3 text-lg font-medium ">
-          Tell us how you think ollie is breaking the rules of Roblox.
+          Tell us how you think deez nuts is breaking the rules of Roblox.
         </div>
         <div className="flex flex-col">
           <span className="text-sm font-bold mt-3 text-neutral-400">Subject:</span>

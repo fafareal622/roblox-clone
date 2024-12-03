@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
         <div className="overflow-y-auto flex flex-col overflow-x-hidden h-[calc(100vh-42px)] flex-1">
           <GlobalAlert
             type="info"
-            content="This is a test alert!"
+            content="Welcome to RBLX69 test, Your data may be deleted without any notice."
           />
           <div className="flex-grow">
             <Component {...pageProps} />

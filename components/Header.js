@@ -91,7 +91,7 @@ export default function Header() {
                     className="rounded-full"
                     alt="User Avatar"
                   />
-                  <span className="text-xs font-medium ml-1">@Floatzel</span>
+                  <span className="text-xs font-medium ml-1">@John_Doe</span>
                 </div>
               </Link>
               <span className="text-xs text-gray-300 ml-1">13+</span>
@@ -125,11 +125,17 @@ export default function Header() {
               className="p-0 text-neutral-400 bg-neutral-900 w-[300px]"
               content={(
                 <div className="flex flex-col">
-                  <Link href="/settings/account" className="p-3 hover:bg-neutral-800">
-                    Account Settings
+                  <Link href="/my/account" className="p-3 hover:bg-neutral-800">
+                    Settings
                   </Link>
-                  <Link href="/settings/security" className="p-3 hover:bg-neutral-800">
-                    Security Settings
+                  <Link href="/crossdevicelogin/ConfirmCode" className="p-3 hover:bg-neutral-800">
+                    Quick Sign In
+                  </Link>
+                  <Link href="/help-safety" className="p-3 hover:bg-neutral-800">
+                    Help & Safety
+                  </Link>
+                  <Link href="/home#" className="p-3 hover:bg-neutral-800">
+                    Logout
                   </Link>
                 </div>
             )}
